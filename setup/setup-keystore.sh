@@ -1,7 +1,7 @@
 # Exit on Error
 set -e
 
-OUTPUT_FILE=/home/oprabin/elk-stack-setup-project/elk-stack/secrets/elasticsearch.keystore
+OUTPUT_FILE=/home/oprabin/elk-stack-setup-project/elk-deployment-with-security/secrets/elasticsearch.keystore
 NATIVE_FILE=/usr/share/elasticsearch/config/elasticsearch.keystore
 
 

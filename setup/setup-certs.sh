@@ -3,7 +3,7 @@ set -e
 
 # need to change this on dev server.
 
-OUTPUT_DIR=/home/oprabin/elk-stack-setup-project/elk-stack/secrets
+OUTPUT_DIR=/home/oprabin/elk-stack-setup-project/elk-deployment-with-security/secrets
 CA_FILE=$OUTPUT_DIR/elastic-stack-ca.p12
 CERT_FILE=$OUTPUT_DIR/elastic-certificates.p12
 

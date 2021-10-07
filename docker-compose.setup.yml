@@ -6,11 +6,11 @@ services:
       context: elasticsearch/
       args:
         ELK_VERSION: ${ELK_VERSION}
-    command: bash /home/oprabin/elk-stack-setup-project/elk-stack/setup/setup-keystore.sh
+    command: bash /home/oprabin/elk-stack-setup-project/elk-deployment-with-security/setup/setup-keystore.sh
     user: "0"
     volumes:
-      - /home/oprabin/elk-stack-setup-project/elk-stack/secrets:/secrets
-      - /home/oprabin/elk-stack-setup-project/elk-stack/setup/:/setup/
+      - /home/oprabin/elk-stack-setup-project/elk-deployment-with-security/secrets:/secrets
+      - /home/oprabin/elk-stack-setup-project/elk-deployment-with-security/setup/:/setup/
     environment:
       ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
   certs:
@@ -18,10 +18,10 @@ services:
       context: elasticsearch/
       args:
         ELK_VERSION: ${ELK_VERSION}
-    command: bash /home/oprabin/elk-stack-setup-project/elk-stack/setup/setup-certs.sh
+    command: bash /home/oprabin/elk-stack-setup-project/elk-deployment-with-security/setup/setup-certs.sh
     user: "0"
     volumes:
-      - /home/oprabin/elk-stack-setup-project/elk-stack/secrets:/secrets
-      - /home/oprabin/elk-stack-setup-project/elk-stack/setup/:/setup/
+      - /home/oprabin/elk-stack-setup-project/elk-deployment-with-security/secrets:/secrets
+      - /home/oprabin/elk-stack-setup-project/elk-deployment-with-security/setup/:/setup/
     environment:
       ELASTIC_PASSWORD: ${ELASTIC_PASSWORD}
