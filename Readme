@@ -1,0 +1,6 @@
+mkdir elasticsearch
+mkdir logstash
+mkdir kibana
+mkdir setup
+mkdir secrets
+
